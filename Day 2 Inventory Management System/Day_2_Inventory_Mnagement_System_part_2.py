@@ -33,8 +33,12 @@ data_file = [x.strip('\n') for x in f.readlines()]
 # Data -> Test
 data_test = ['abcde','fghij','klmno','pqrst','fguij','axcye','wvxyz']
 
+
+# Output:
+print('\nOutput:\n-------------------------------------\n')
 result_teste = Day2_part2(data_test)
-print(result_teste)
+print('Result Data test: '+''.join(result_teste[0]))
 print('\n-------------------------------------\n')
 result_file = Day2_part2(data_file)
-print(''.join(result_file[0]))
+print('Result Data File: '+''.join(result_file[0]))
+print('\n-------------------------------------\n')
